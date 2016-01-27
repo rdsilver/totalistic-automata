@@ -1,0 +1,122 @@
+body {
+	padding: 0; margin: 0;
+	background-color: rgb(48, 56, 65);
+}
+
+td {
+	width: 10px;
+	height: 12px;
+	background-color: rgb(243, 243, 243);
+}
+
+td:hover {
+	background-color: rgb(160, 160, 160);
+}
+
+td.selected {
+	background-color: rgb(33, 133, 213);
+}
+
+#neighborhood {
+	width: 73px ;
+}
+
+#info p{
+	margin: 0px;
+}
+
+#neighborhood p{
+	margin: 0px;
+	padding-left: 2px;
+	margin-left: -32px;
+}
+
+#controls p{
+	margin: 0px;
+}
+
+#info a{
+	color: rgb(33, 133, 213);
+}
+
+#defaultCanvas0 {
+	cursor: default;
+}
+
+#container {
+    width:100%;
+    text-align:center;
+    box-shadow: 0 0px 1px 1px #222931;
+    box-shadow: 0 0px 2px 3px #303841;
+    background: linear-gradient(#3B444F, #2E363E);
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+  	-moz-user-select: none;     /* Firefox all */
+  	-ms-user-select: none;      /* IE 10+ */
+  	user-select: none;    
+}
+
+.left {
+    float:left;
+    text-align:left;
+    padding-left: 10px;
+}
+
+.center {
+    display: inline-block;
+    margin:0 auto;
+}
+
+.right {
+    float: right;
+    padding-right: 10px;
+    text-align: left;
+}
+
+#container p.header {
+	font-size: 20px;
+	color: #AEB7C1;
+}
+
+#cell_rules .header {
+	margin: 0 0 5px 0;
+}
+
+#cell_rules {
+	color: #EEEEEE;
+	font-size: 15px;
+	font-family: Courier New;
+	font-weight: bold;
+	cursor: default;
+}
+
+#cell_rules span:hover{
+	color: grey;
+	cursor: pointer;
+}
+
+.lightgreen {
+	color:lightgreen;
+}
+
+#container p{
+	color: white;
+	font-size: 14px;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	text-shadow: 0px -1px 1px #1C232A;
+}
+
+.blue {
+	font-weight: bold;
+	color: #5CACEC;
+}
+
+#known_automata {
+	margin-top: 10px;
+}
+
+#sketch {
+	height: calc(100% - 100px);
+}

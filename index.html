@@ -1,0 +1,68 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <title>Cellular Automata</title>
+</head>
+
+<body>
+	<div id="sketch"></div>
+  <div id="container">
+    <div id="info" class="left">
+        <p class='header'>Info</p>
+        <p id='cells_alive'>% Cells Alive : </p>
+        <p id='cells_dead'>% Cells Dead : </p>
+        <p id='generations'>Generations : </p>
+        <p><a href="https://en.wikipedia.org/wiki/Life-like_cellular_automaton">What is totalistic cellular automata?</a></p>
+      </div>
+
+  	<div id="cell_rules" class="center">
+  		<p class='header'>Number of neighbors to</p>
+      <div id="born">Be Born: <span>0</span> <span>1</span> <span>2</span> <span>3</span> <span>4</span> <span>5</span> <span>6</span> <span>7</span> <span>8</span></div>
+      <div id="survive">Survive: <span>0</span> <span>1</span> <span>2</span> <span>3</span> <span>4</span> <span>5</span> <span>6</span> <span>7</span> <span>8</span></div>
+
+      <select id="known_automata">
+        <option value="" disabled selected>Well Known Automata</option>
+        <option value="1/1">Gnarl</option>
+        <option value="1357/1357">Replicator</option>
+        <option value="02468/1357">Fredkin</option>
+        <option value="0/2">Live free or die</option>
+        <option value="023/3">DotLife</option>
+        <option value="012345678/3">Life without death</option>
+        <option value="1234/3">Mazectric</option>
+        <option value="12345/3">Maze</option>
+        <option value="23/3">Conway's Game of Life</option>
+        <option value="45678/3">Coral</option>
+        <option value="34/34">34 Life</option>
+        <option value="4567/345">Assimilation</option>
+        <option value="5/345">Long Life</option>
+        <option value="5678/35678">Diamoeba</option>
+        <option value="1358/357">Amoeba</option>
+        <option value="238/357">Pseudo Life</option>
+        <option value="125/36">2x2</option>
+        <option value="23/36">HighLife</option>
+        <option value="235678/3678">Stains</option>
+        <option value="34678/3678">Day & Night</option>
+        <option value="2345/45678">Walled Cities</option>
+        <option value="45678/5678">Vote</option>
+      </select>
+
+    </div>
+
+    <div id="controls" class="right">
+    	<p class='header'>Tips</p>
+    	<p>N - New Rule</p>
+    	<p>R - Restart Current Rule</p>
+    	<p>S - Scramble Current Rule</p>
+      <p>Drag mouse above to inverse cells</p>
+    </div>
+  </div>
+
+  <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.20/p5.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script language="javascript" type="text/javascript" src="selecting_rules.js"></script>
+  <script language="javascript" src="sketch.js"></script>
+</body>
+</html>
