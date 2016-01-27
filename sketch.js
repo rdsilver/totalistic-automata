@@ -62,6 +62,8 @@ function Grid() {
       this.grid[cell_x][cell_y] = cell_to_turn_on[2];
       this.grid[cell_x+1][cell_y] = cell_to_turn_on[2];
       this.grid[cell_x-1][cell_y] = cell_to_turn_on[2];
+      this.grid[cell_x][cell_y+1] = cell_to_turn_on[2];
+      this.grid[cell_x][cell_y-1] = cell_to_turn_on[2];
 
       cell_to_turn_on = [];
     }
