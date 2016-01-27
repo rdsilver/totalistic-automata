@@ -54,9 +54,15 @@ function Grid() {
     // Loop through the 2d array and match the interger result of the neighbors to find the rule
     // Since drawing takes a long time, don't redraw if the cell state doesn't change
 
-    // Turn on a cell if it was clicked
+    // Turn some cells on if it was clicked
     if (cell_to_turn_on.length == 3) {
-      this.grid[cell_to_turn_on[0]][cell_to_turn_on[1]] = cell_to_turn_on[2];
+      var cell_x = cell_to_turn_on[0];
+      var cell_y = cell_to_turn_on[1];
+
+      this.grid[cell_x][cell_y] = cell_to_turn_on[2];
+      this.grid[cell_x+1][cell_y] = cell_to_turn_on[2];
+      this.grid[cell_x-1][cell_y] = cell_to_turn_on[2];
+
       cell_to_turn_on = [];
     }
 
